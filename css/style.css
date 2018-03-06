@@ -1,0 +1,6 @@
+/* scrollbar */
+::-webkit-scrollbar {display: none;}
+::-webkit-scrollbar-track {border-radius: 4px; margin: 0 0 5px;}
+::-webkit-scrollbar-thumb {border-radius: 4px; background: #cccccc;}
+
+body{}
