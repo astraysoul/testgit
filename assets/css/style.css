@@ -10,9 +10,10 @@
 /*-------------------------------------------------------------------- header --*/
 header{
     width: 100%;
-    height: 408px;
+    height: 380px;
     background: url(../images/Hero.png) no-repeat top center;
-    background-size: cover;
+    /* background-size: cover; */
+    position: relative;
 }
 header h1{
     width: 100%;
@@ -43,13 +44,88 @@ header h1{
     line-height: 21px;
 }
 .hot-block{
-
+    width: 800px;
+    height: auto;
+    position: absolute;
+    bottom: -88px;
+    left: 50%;
+    transform: translate3d(-50%,0,0);
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+    padding: 20px 26px 18px;
 }
+.hot-title{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 21px;
+    display: block;
+    color: #000;
+}
+.hot-content{
+    width: 100%;
+    height: auto;
+    margin: 14px auto 0;
+    padding: 0 25px;
+}
+.hot-content ul li{
+    width: 19%;
+    margin-right: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 11px 35px;
+}
+.hot-content ul li:last-child{margin-right: 0;}
+.hot1{background: #8A82CC;}
+.hot2{background: #FFA782;}
+.hot3{background: #F5D005;}
+.hot4{background: #559AC8;}
 /*----------------------------------------------------------------------- 內容區塊 --*/
 main{
     width: 100%;
-    height: auto;
+    height: 500px;
     background: #fff;
+    padding: 133px 0 0 0;
+}
+.line{
+    width: 900px;
+    height: 1px;
+    /* border: 1px dashed #559AC8; */
+    background-image: linear-gradient(to right, #559AC8 37%, #559AC8 50%, transparent 50%);
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    margin: 0 auto;
+}
+.circle{
+    width: 24px;
+    height: 24px;
+    border: 2px solid #559ac8;
+    border-radius: 99em;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: -11px;
+    background: #fff;
+}
+.circle::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 6px 0px 6px;
+    border-color: #559ac8 transparent transparent transparent;
+    border-radius: 0;
 }
 /*----------------------------------------------------------------------- footer --*/
 footer{
